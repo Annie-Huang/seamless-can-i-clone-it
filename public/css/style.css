@@ -91,6 +91,7 @@ body {
 .orbit .center-image {
   width: 12rem;
   position: relative;
+  transform: translate(-2rem, -2rem);
 }
 .orbit .center-image img {
   position: absolute;
