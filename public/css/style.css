@@ -105,7 +105,6 @@ body {
   list-style: none;
 }
 .orbit li {
-  opacity: 0;
   position: absolute;
   background: var(--orange-light);
   width: 8rem;
@@ -136,9 +135,8 @@ body {
   opacity: 1;
   cursor: pointer;
 }
-.orbit li:first-child {
-  opacity: 1;
-  transform: translateX(300px);
+.orbit li:nth-child(1) {
+  transform: translateY(15rem);
 }
 
 /*# sourceMappingURL=style.css.map */

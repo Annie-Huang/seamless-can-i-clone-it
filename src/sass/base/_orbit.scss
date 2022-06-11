@@ -11,6 +11,7 @@ body {
     width: 12rem;
     position: relative;
     // keep the center of the .center-image the same, move the image so you don't need to move every small circle
+    // the 2rem = (12rem - 8rem) / 2
     transform: translate(-2rem, -2rem);
 
     img {
@@ -29,7 +30,6 @@ body {
   }
 
   li {
-    opacity: 0;
     position: absolute;
     background: var(--orange-light);
     width: 8rem;
@@ -64,8 +64,7 @@ body {
     }
   }
 
-  li:first-child {
-    opacity: 1;
-    transform: translateX(300px);
+  li:nth-child(1) {
+    transform: translateY(15rem);
   }
 }
