@@ -9,6 +9,7 @@ body {
 
 .orbit {
   --size: 12rem;
+  --speed: 120s;
   .center-image {
     width: var(--size);
     position: relative;
@@ -39,7 +40,7 @@ body {
     position: relative;
     list-style: none;
     transform-origin: center;
-    animation: orbit 60s linear infinite;
+    animation: orbit var(--speed) linear infinite;
   }
 
   li {
@@ -64,10 +65,11 @@ body {
 
     & > * {
       position: absolute;
+      // Don't use transform, use grid in the <li> level to center the children
       //top: 50%;
       //left: 50%;
       //transform: translate(-50%, -50%);
-      animation: hold-position 30s linear infinite;
+      animation: orbit var(--speed) linear reverse infinite;
     }
 
     > p {

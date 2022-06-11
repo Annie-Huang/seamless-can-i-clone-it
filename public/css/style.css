@@ -91,6 +91,7 @@ body {
 
 .orbit {
   --size: 12rem;
+  --speed: 120s;
 }
 .orbit .center-image {
   width: var(--size);
@@ -112,7 +113,7 @@ body {
   position: relative;
   list-style: none;
   transform-origin: center;
-  animation: orbit 60s linear infinite;
+  animation: orbit var(--speed) linear infinite;
 }
 .orbit li {
   --icon-bg: pink;
@@ -132,7 +133,7 @@ body {
 }
 .orbit li > * {
   position: absolute;
-  animation: hold-position 30s linear infinite;
+  animation: orbit var(--speed) linear reverse infinite;
 }
 .orbit li > p {
   background: var(--text-bg);
