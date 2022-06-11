@@ -6,4 +6,17 @@ body {
 }
 
 .orbit {
+  .center-image {
+    width: 10rem;
+    position: relative;
+
+    img {
+      position: absolute;
+      transition: opacity 500ms;
+
+      &:not(:first-child):hover {
+        opacity: 0;
+      }
+    }
+  }
 }

@@ -87,4 +87,16 @@ body {
   place-content: center;
 }
 
+.orbit .center-image {
+  width: 10rem;
+  position: relative;
+}
+.orbit .center-image img {
+  position: absolute;
+  transition: opacity 500ms;
+}
+.orbit .center-image img:not(:first-child):hover {
+  opacity: 0;
+}
+
 /*# sourceMappingURL=style.css.map */
