@@ -88,10 +88,12 @@ body {
   place-content: center;
 }
 
+.orbit {
+  --size: 12rem;
+}
 .orbit .center-image {
-  width: 12rem;
+  width: var(--size);
   position: relative;
-  transform: translate(-2rem, -2rem);
 }
 .orbit .center-image img {
   position: absolute;
@@ -101,8 +103,8 @@ body {
   opacity: 0;
 }
 .orbit ul {
-  width: 100px;
-  height: 100px;
+  width: var(--size);
+  height: var(--size);
   background: red;
   position: relative;
   list-style: none;

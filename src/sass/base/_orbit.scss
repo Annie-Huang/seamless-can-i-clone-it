@@ -7,12 +7,13 @@ body {
 }
 
 .orbit {
+  --size: 12rem;
   .center-image {
-    width: 12rem;
+    width: var(--size);
     position: relative;
     // keep the center of the .center-image the same, move the image so you don't need to move every small circle
     // the 2rem = (12rem - 8rem) / 2
-    transform: translate(-2rem, -2rem);
+    //transform: translate(-2rem, -2rem);
 
     img {
       position: absolute;
@@ -25,8 +26,8 @@ body {
   }
 
   ul {
-    width: 100px;
-    height: 100px;
+    width: var(--size);
+    height: var(--size);
     background: red;
 
     position: relative;
