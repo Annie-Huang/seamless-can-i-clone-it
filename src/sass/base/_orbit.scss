@@ -64,7 +64,34 @@ body {
     }
   }
 
+  // The calculation is a^2 + a^2 = 15^2 => a = 10.61
   li:nth-child(1) {
-    transform: translateY(15rem);
+    transform: translate(15rem, 0rem);
+  }
+
+  li:nth-child(2) {
+    transform: translate(10.61rem, 10.61rem);
+  }
+
+  li:nth-child(3) {
+    transform: translate(0, 15rem);
+  }
+  li:nth-child(4) {
+    transform: translate(-10.61rem, 10.61rem);
+  }
+
+  li:nth-child(5) {
+    transform: translate(-15rem, 0rem);
+  }
+
+  li:nth-child(6) {
+    transform: translate(-10.61rem, -10.61rem);
+  }
+
+  li:nth-child(7) {
+    transform: translate(0, -15rem);
+  }
+  li:nth-child(8) {
+    transform: translate(10.61rem, -10.61rem);
   }
 }

@@ -136,7 +136,28 @@ body {
   cursor: pointer;
 }
 .orbit li:nth-child(1) {
-  transform: translateY(15rem);
+  transform: translate(15rem, 0rem);
+}
+.orbit li:nth-child(2) {
+  transform: translate(10.61rem, 10.61rem);
+}
+.orbit li:nth-child(3) {
+  transform: translate(0, 15rem);
+}
+.orbit li:nth-child(4) {
+  transform: translate(-10.61rem, 10.61rem);
+}
+.orbit li:nth-child(5) {
+  transform: translate(-15rem, 0rem);
+}
+.orbit li:nth-child(6) {
+  transform: translate(-10.61rem, -10.61rem);
+}
+.orbit li:nth-child(7) {
+  transform: translate(0, -15rem);
+}
+.orbit li:nth-child(8) {
+  transform: translate(10.61rem, -10.61rem);
 }
 
 /*# sourceMappingURL=style.css.map */
