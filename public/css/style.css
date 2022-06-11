@@ -148,7 +148,6 @@ body {
 .orbit li:nth-child(1) {
   --icon-bg: var(--blue-light);
   --text-bg: var(--blue-dark);
-  transform: translate(15rem, 0rem);
 }
 .orbit li:nth-child(2) {
   --icon-bg: var(--green-light);
