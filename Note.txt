@@ -6,3 +6,5 @@ https://github.com/Annie-Huang/seamless-can-i-clone-it
 https://seamlesshr.com/
 
 -------------------------------------------------------------------------------------------
+
+PS C:\react\seamless-can-i-clone-it> npm run start
