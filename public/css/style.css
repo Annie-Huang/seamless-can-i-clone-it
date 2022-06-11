@@ -47,15 +47,24 @@ picture {
   }
 }
 :root {
-  --green: hsl(123deg, 47%, 74%);
-  --blue: hsl(210deg, 47%, 74%);
-  --orange: hsl(34deg, 93%, 77%);
-  --purple: hsl(231deg, 44%, 76%);
-  --yellow: hsl(54deg, 76%, 79%);
-  --brown: hsl(20deg, 41%, 69%);
-  --red: hsl(0deg, 59%, 76%);
-  --pink: hsl(295deg, 42%, 72%);
-  --white: hsl(0deg, 0%, 100%);
+  --green-light: hsl(123deg, 47%, 74%);
+  --green-dark: #2e7f32;
+  --blue-light: hsl(210deg, 47%, 74%);
+  --blue-dark: #2e577f;
+  --orange-light: hsl(34deg, 93%, 77%);
+  --orange-dark: #b66a07;
+  --purple-light: hsl(231deg, 44%, 76%);
+  --purple-dark: #334084;
+  --yellow-light: hsl(54deg, 76%, 79%);
+  --yellow-dark: #afa018;
+  --brown-light: hsl(20deg, 41%, 69%);
+  --brown-dark: #68402c;
+  --red-light: hsl(0deg, 59%, 76%);
+  --red-dark: #922626;
+  --pink-light: hsl(295deg, 42%, 72%);
+  --pink-dark: #6e2f74;
+  --white-light: hsl(0deg, 0%, 100%);
+  --white-dark: #999999;
 }
 
 /*

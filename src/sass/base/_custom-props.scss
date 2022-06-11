@@ -1,10 +1,11 @@
 @use "sass:color";
-@use "../abstracts/" as *;
+@use '../abstracts/' as *;
 
 // For some reason, whenever you edit this, I need to restart the server to see it got generated in sytle.css properly
 :root {
   @each $name, $value in $colors {
-    --#{$name}: #{$value};
+    --#{$name}-light: #{$value};
+    --#{$name}-dark: #{color.adjust($value, $lightness: -40%)};
   }
 }
 
