@@ -57,13 +57,17 @@ body {
     text-align: center;
     line-height: 1;
 
+    display: grid;
+    place-items: center;
+
     //animation: orbit 60s linear reverse infinite;
 
     & > * {
       position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      //top: 50%;
+      //left: 50%;
+      //transform: translate(-50%, -50%);
+      animation: hold-position 30s linear infinite;
     }
 
     > p {
@@ -129,5 +133,11 @@ body {
 @keyframes orbit {
   100% {
     rotate: 1turn;
+  }
+}
+
+@keyframes hold-position {
+  100% {
+    rotate: -1turn;
   }
 }

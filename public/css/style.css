@@ -127,12 +127,12 @@ body {
   color: var(--white-light);
   text-align: center;
   line-height: 1;
+  display: grid;
+  place-items: center;
 }
 .orbit li > * {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  animation: hold-position 30s linear infinite;
 }
 .orbit li > p {
   background: var(--text-bg);
@@ -191,6 +191,11 @@ body {
 @keyframes orbit {
   100% {
     rotate: 1turn;
+  }
+}
+@keyframes hold-position {
+  100% {
+    rotate: -1turn;
   }
 }
 
