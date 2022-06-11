@@ -81,5 +81,10 @@ the above will create:
   --white: hsl(0deg, 0%, 100%);
 }
 */
+body {
+  display: grid;
+  min-height: 100vh;
+  place-content: center;
+}
 
 /*# sourceMappingURL=style.css.map */
