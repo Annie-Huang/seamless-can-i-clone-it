@@ -101,8 +101,13 @@ body {
   opacity: 0;
 }
 .orbit ul {
+  width: 100px;
+  height: 100px;
+  background: red;
   position: relative;
   list-style: none;
+  transform-origin: center;
+  animation: orbit 60s linear infinite;
 }
 .orbit li {
   --icon-bg: pink;
@@ -176,6 +181,12 @@ body {
   --icon-bg: var(--orange-light);
   --text-bg: var(--orange-dark);
   transform: translate(10.61rem, -10.61rem);
+}
+
+@keyframes orbit {
+  100% {
+    rotate: 1turn;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

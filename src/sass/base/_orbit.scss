@@ -25,8 +25,14 @@ body {
   }
 
   ul {
+    width: 100px;
+    height: 100px;
+    background: red;
+
     position: relative;
     list-style: none;
+    transform-origin: center;
+    animation: orbit 60s linear infinite;
   }
 
   li {
@@ -79,7 +85,6 @@ body {
     --text-bg: var(--green-dark);
     transform: translate(10.61rem, 10.61rem);
   }
-
   li:nth-child(3) {
     --icon-bg: var(--pink-light);
     --text-bg: var(--pink-dark);
@@ -90,19 +95,16 @@ body {
     --text-bg: var(--red-dark);
     transform: translate(-10.61rem, 10.61rem);
   }
-
   li:nth-child(5) {
     --icon-bg: var(--brown-light);
     --text-bg: var(--brown-dark);
     transform: translate(-15rem, 0rem);
   }
-
   li:nth-child(6) {
     --icon-bg: var(--yellow-light);
     --text-bg: var(--yellow-dark);
     transform: translate(-10.61rem, -10.61rem);
   }
-
   li:nth-child(7) {
     --icon-bg: var(--purple-light);
     --text-bg: var(--purple-dark);
@@ -112,5 +114,11 @@ body {
     --icon-bg: var(--orange-light);
     --text-bg: var(--orange-dark);
     transform: translate(10.61rem, -10.61rem);
+  }
+}
+
+@keyframes orbit {
+  100% {
+    rotate: 1turn;
   }
 }

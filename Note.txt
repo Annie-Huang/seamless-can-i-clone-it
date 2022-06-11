@@ -8,3 +8,6 @@ https://seamlesshr.com/
 -------------------------------------------------------------------------------------------
 
 PS C:\react\seamless-can-i-clone-it> npm run start
+
+Very strange, need to turn on "Experimental Web Platform features" in chrome://flags/
+for keyframe rotate to work....
