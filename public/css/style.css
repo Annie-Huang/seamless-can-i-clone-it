@@ -98,5 +98,17 @@ body {
 .orbit .center-image img:not(:first-child):hover {
   opacity: 0;
 }
+.orbit ul {
+  position: relative;
+  list-style: none;
+}
+.orbit li {
+  opacity: 0;
+  position: absolute;
+}
+.orbit li:first-child {
+  opacity: 1;
+  transform: translateX(300px);
+}
 
 /*# sourceMappingURL=style.css.map */

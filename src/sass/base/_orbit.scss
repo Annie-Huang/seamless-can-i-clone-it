@@ -19,4 +19,19 @@ body {
       }
     }
   }
+
+  ul {
+    position: relative;
+    list-style: none;
+  }
+
+  li {
+    opacity: 0;
+    position: absolute;
+  }
+
+  li:first-child {
+    opacity: 1;
+    transform: translateX(300px);
+  }
 }
