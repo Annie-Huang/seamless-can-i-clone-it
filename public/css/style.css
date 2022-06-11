@@ -124,6 +124,7 @@ body {
   color: var(--white-light);
   text-align: center;
   line-height: 1;
+  animation: orbit 60s linear reverse infinite;
 }
 .orbit li > * {
   position: absolute;
