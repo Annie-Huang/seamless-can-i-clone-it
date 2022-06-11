@@ -46,5 +46,31 @@ picture {
     scroll-behavior: auto !important;
   }
 }
+:root {
+  --green: hsl(123deg, 47%, 74%);
+  --blue: hsl(210deg, 47%, 74%);
+  --orange: hsl(34deg, 93%, 77%);
+  --purple: hsl(231deg, 44%, 76%);
+  --yellow: hsl(54deg, 76%, 79%);
+  --brown: hsl(20deg, 41%, 69%);
+  --red: hsl(0deg, 59%, 76%);
+  --pink: hsl(295deg, 42%, 72%);
+  --white: hsl(0deg, 0%, 100%);
+}
+
+/*
+the above will create:
+:root {
+  --green: hsl(123deg, 47%, 74%);
+  --blue: hsl(210deg, 47%, 74%);
+  --orange: hsl(34deg, 93%, 77%);
+  --purple: hsl(231deg, 44%, 76%);
+  --yellow: hsl(54deg, 76%, 79%);
+  --brown: hsl(20deg, 41%, 69%);
+  --red: hsl(0deg, 59%, 76%);
+  --pink: hsl(295deg, 42%, 72%);
+  --white: hsl(0deg, 0%, 100%);
+}
+*/
 
 /*# sourceMappingURL=style.css.map */
