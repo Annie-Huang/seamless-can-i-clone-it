@@ -30,8 +30,11 @@ body {
   }
 
   li {
+    --icon-bg: pink;
+    --text-bg: blue;
+
+    background: var(--icon-bg);
     position: absolute;
-    background: var(--orange-light);
     width: 8rem;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
@@ -49,7 +52,7 @@ body {
     }
 
     > p {
-      background: var(--orange-dark);
+      background: var(--text-bg);
       width: 100%;
       height: 100%;
       display: grid;
