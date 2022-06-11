@@ -26,6 +26,11 @@ body {
   }
 
   ul {
+    // grid and place-item: center + absolute position to multiple children is a great solution to place all children into the middle the parent.
+    // Now the circle no longer move.
+    display: grid;
+    place-items: center;
+
     width: var(--size);
     height: var(--size);
     background: red;

@@ -103,6 +103,8 @@ body {
   opacity: 0;
 }
 .orbit ul {
+  display: grid;
+  place-items: center;
   width: var(--size);
   height: var(--size);
   background: red;
