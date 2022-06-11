@@ -69,32 +69,48 @@ body {
 
   // The calculation is a^2 + a^2 = 15^2 => a = 10.61
   li:nth-child(1) {
+    --icon-bg: var(--blue-light);
+    --text-bg: var(--blue-dark);
     transform: translate(15rem, 0rem);
   }
 
   li:nth-child(2) {
+    --icon-bg: var(--green-light);
+    --text-bg: var(--green-dark);
     transform: translate(10.61rem, 10.61rem);
   }
 
   li:nth-child(3) {
+    --icon-bg: var(--pink-light);
+    --text-bg: var(--pink-dark);
     transform: translate(0, 15rem);
   }
   li:nth-child(4) {
+    --icon-bg: var(--red-light);
+    --text-bg: var(--red-dark);
     transform: translate(-10.61rem, 10.61rem);
   }
 
   li:nth-child(5) {
+    --icon-bg: var(--brown-light);
+    --text-bg: var(--brown-dark);
     transform: translate(-15rem, 0rem);
   }
 
   li:nth-child(6) {
+    --icon-bg: var(--yellow-light);
+    --text-bg: var(--yellow-dark);
     transform: translate(-10.61rem, -10.61rem);
   }
 
   li:nth-child(7) {
+    --icon-bg: var(--purple-light);
+    --text-bg: var(--purple-dark);
     transform: translate(0, -15rem);
   }
   li:nth-child(8) {
+    --icon-bg: var(--orange-light);
+    --text-bg: var(--orange-dark);
     transform: translate(10.61rem, -10.61rem);
   }
 }
