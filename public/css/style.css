@@ -133,30 +133,30 @@ body {
   place-items: center;
 }
 .orbit li:hover {
-  animation-play-state: paused;
-}
-.orbit li:nth-child(0) {
-  --throb-delay: 0ms;
+  --throb-play-state: paused;
 }
 .orbit li:nth-child(1) {
-  --throb-delay: 500ms;
+  --throb-delay: 0ms;
 }
 .orbit li:nth-child(2) {
-  --throb-delay: 1000ms;
+  --throb-delay: 500ms;
 }
 .orbit li:nth-child(3) {
-  --throb-delay: 1500ms;
+  --throb-delay: 1000ms;
 }
 .orbit li:nth-child(4) {
-  --throb-delay: 2000ms;
+  --throb-delay: 1500ms;
 }
 .orbit li:nth-child(5) {
-  --throb-delay: 2500ms;
+  --throb-delay: 2000ms;
 }
 .orbit li:nth-child(6) {
-  --throb-delay: 3000ms;
+  --throb-delay: 2500ms;
 }
 .orbit li:nth-child(7) {
+  --throb-delay: 3000ms;
+}
+.orbit li:nth-child(8) {
   --throb-delay: 3500ms;
 }
 .orbit li > * {
@@ -166,7 +166,8 @@ body {
   place-items: center;
   border-radius: inherit;
   position: absolute;
-  animation: orbit var(--speed) linear reverse infinite, throb 1s ease-in-out var(--throb-delay, 100ms) infinite alternate;
+  animation: orbit var(--speed) linear reverse infinite, throb 1s ease-in-out var(--throb-delay) infinite alternate;
+  animation-play-state: var(--one, running), var(--throb-play-state, running);
 }
 .orbit li > div {
   background-color: var(--icon-bg);

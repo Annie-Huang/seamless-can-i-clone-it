@@ -69,11 +69,12 @@ body {
     //animation: orbit 60s linear reverse infinite;
 
     &:hover {
-      animation-play-state: paused;
+      //animation-play-state: paused;
+      --throb-play-state: paused;
     }
 
     @for $i from 0 through 7 {
-      &:nth-child(#{$i}) {
+      &:nth-child(#{$i + 1}) {
         --throb-delay: #{500ms * $i};
       }
     }
@@ -95,7 +96,9 @@ body {
       // animation-name, animation-duration, animation-timing-function, animation-delay, animation-iteration-count, animation-direction, animation-fill-mode, and animation-play-state.
       // e.g animation: 3s ease-in 1s infinite reverse both running slidein;
       animation: orbit var(--speed) linear reverse infinite,
-        throb 1s ease-in-out var(--throb-delay, 100ms) infinite alternate;
+        throb 1s ease-in-out var(--throb-delay) infinite alternate;
+      animation-play-state: var(--one, running),
+        var(--throb-play-state, running);
     }
 
     > div {
