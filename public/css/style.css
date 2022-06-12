@@ -96,6 +96,7 @@ body {
 .orbit .center-image {
   width: var(--size);
   position: relative;
+  z-index: 10;
 }
 .orbit .center-image img {
   position: absolute;
@@ -109,11 +110,13 @@ body {
   place-items: center;
   width: var(--size);
   height: var(--size);
-  background: red;
   position: relative;
   list-style: none;
   transform-origin: center;
   animation: orbit var(--speed) linear infinite;
+}
+.orbit ul:hover {
+  animation-play-state: paused;
 }
 .orbit li {
   --icon-bg: pink;

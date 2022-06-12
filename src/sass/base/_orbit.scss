@@ -17,6 +17,8 @@ body {
     // the 2rem = (12rem - 8rem) / 2
     //transform: translate(-2rem, -2rem);
 
+    z-index: 10; // make center-image on top of <ul>
+
     img {
       position: absolute;
       transition: opacity 500ms;
@@ -35,12 +37,16 @@ body {
 
     width: var(--size);
     height: var(--size);
-    background: red;
+    //background: red;
 
     position: relative;
     list-style: none;
     transform-origin: center;
     animation: orbit var(--speed) linear infinite;
+
+    &:hover {
+      animation-play-state: paused;
+    }
   }
 
   li {
