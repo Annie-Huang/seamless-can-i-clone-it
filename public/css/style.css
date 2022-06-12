@@ -117,6 +117,7 @@ body {
 }
 .orbit ul:hover {
   animation-play-state: paused;
+  --orbit-play-state: paused;
 }
 .orbit li {
   --icon-bg: pink;
@@ -167,7 +168,7 @@ body {
   border-radius: inherit;
   position: absolute;
   animation: orbit var(--speed) linear reverse infinite, throb 1s ease-in-out var(--throb-delay) infinite alternate;
-  animation-play-state: var(--one, running), var(--throb-play-state, running);
+  animation-play-state: var(--orbit-play-state, running), var(--throb-play-state, running);
 }
 .orbit li > div {
   background-color: var(--icon-bg);

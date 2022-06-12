@@ -45,7 +45,12 @@ body {
     animation: orbit var(--speed) linear infinite;
 
     &:hover {
+      // Stop the 9 circles from orbiting (clock-wise) around the the center-image
       animation-play-state: paused;
+
+      // Stop the 9 circles from self orbiting (anti-close wise). Hover on the <li> will bubble up to the parent <ul>
+      // If you do it just under li:hover in line 79, it will only paused on that hovered circle. Doing it here will effect all circles from self-anti-clock-wise rotation.
+      --orbit-play-state: paused;
     }
   }
 
@@ -97,7 +102,7 @@ body {
       // e.g animation: 3s ease-in 1s infinite reverse both running slidein;
       animation: orbit var(--speed) linear reverse infinite,
         throb 1s ease-in-out var(--throb-delay) infinite alternate;
-      animation-play-state: var(--one, running),
+      animation-play-state: var(--orbit-play-state, running),
         var(--throb-play-state, running);
     }
 
