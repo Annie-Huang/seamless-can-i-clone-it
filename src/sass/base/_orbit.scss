@@ -68,6 +68,10 @@ body {
 
     //animation: orbit 60s linear reverse infinite;
 
+    &:hover {
+      animation-play-state: paused;
+    }
+
     @for $i from 0 through 7 {
       &:nth-child(#{$i}) {
         --throb-delay: #{500ms * $i};

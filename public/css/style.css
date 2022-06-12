@@ -132,6 +132,9 @@ body {
   display: grid;
   place-items: center;
 }
+.orbit li:hover {
+  animation-play-state: paused;
+}
 .orbit li:nth-child(0) {
   --throb-delay: 0ms;
 }
