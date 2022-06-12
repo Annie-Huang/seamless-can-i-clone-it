@@ -136,7 +136,7 @@ body {
 }
 .orbit li > * {
   position: absolute;
-  animation: orbit var(--speed) linear reverse infinite;
+  animation: orbit var(--speed) linear reverse infinite, throb 1s ease infinite alternate;
 }
 .orbit li > p {
   background: var(--text-bg);
@@ -200,6 +200,11 @@ body {
 @keyframes hold-position {
   100% {
     rotate: -1turn;
+  }
+}
+@keyframes throb {
+  100% {
+    scale: 1.2;
   }
 }
 
